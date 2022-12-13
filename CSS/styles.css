@@ -1,27 +1,1148 @@
-header {
-  background: black;
-  width: auto;
-  height: 100px;
+/* Global styles */
+
+/*
+* {
+  box-sizing: border-box;
 }
+*/
 
 body {
-  color: red;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 3em;
+  margin: 0;
+  padding: 0;
+}
+
+/* ---------- GLOBAL HEADER ---------- */
+header {
+  background: #f5f5f5;
+  width: 100%;
+  display: flex;
+}
+
+a:link {
+  text-decoration: none !important;
+  cursor: pointer;
+}
+
+.active {
+  color: white;
+  background: lightgray;
+}
+
+.nav__list_header {
+  list-style: none;
+  text-decoration: none;
+}
+
+/* ---------- GLOBAL FOOTER ---------- */
+footer {
+  background: #151514;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  color: white;
+}
+
+/* Footer - Left section */
+.left-section_footer {
   margin-left: auto;
   margin-right: auto;
 }
 
-/* Global styles */
-
-/* Buttons */
-
-/* Forms */
-
-/* Mobile style */
-@media only screen and (max-width: 499px) {
+.fa-clock {
+  margin-top: 15px;
 }
 
-/* Desktop styles */
-@media only screen and (min-width: 800px) {
+.openhours-heading_footer {
+  font-size: 16px;
+}
+
+.opnenours_subheading_footer {
+  font-size: 26px;
+}
+
+.nav__list-openhours_footer {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  list-style: none;
+}
+
+.nav__list-openhours_footer li {
+  margin-bottom: 5px;
+}
+
+/* Footer - Center section */
+.center-section_footer {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fa-location-dot {
+  margin-top: 15px;
+}
+
+.maps-heading_footer {
+  font-size: 16px;
+}
+
+.maps_subheading_footer {
+  font-size: 20px;
+}
+
+.googlemaps_footer {
+  width: 270px;
+  height: 170px;
+}
+
+.terms-and-condition-sub_footer {
+  font-size: 14px;
+  text-align: center;
+  /* margin: 15px 0 15px 0; */
+}
+
+/* Footer - Right section */
+.right-section_footer {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fa-envelope {
+  margin-top: 15px;
+}
+
+.newsletter-heading_footer {
+  font-size: 16px;
+}
+
+.newsletter-form_footer {
+  margin-top: 60px;
+}
+
+.newsletter-input_footer[type="email"] {
+  width: 100%;
+  padding: 5px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+.socialmedia-icons_footer {
+}
+
+.nav__list-socialmedia_footer {
+  display: flex;
+  padding: 0;
+  list-style: none;
+  gap: 2em;
+}
+
+.newsletter-signup_footer {
+  margin-top: 15px;
+  padding: 10px 50px;
+  background: #2b6cb6;
+  font-size: 14px;
+  color: white;
+  border: none;
+  box-shadow: 5px -5px 0 0 rgb(34, 79, 131), 10px -10px 0 0 rgb(17, 45, 77);
+}
+
+.newsletter-signup_footer:hover {
+  transition: 0.3s;
+  transition-timing-function: ease-in-out;
+  background: #235b9b;
+}
+
+.nav__list-socialmedia_footer li:nth-of-type(1) {
+  margin-left: auto;
+}
+
+.nav__list-socialmedia_footer a:visited {
+  color: white;
+}
+
+.nav__list-socialmedia_footer:nth-of-type(1):hover {
+  color: #337fff;
+}
+.nav__list-socialmedia_footer:nth-of-type(2):hover {
+  color: #ff0000;
+}
+.nav__list-socialmedia_footer:nth-of-type(3):hover {
+  color: #d6249f;
+}
+.nav__list-socialmedia_footer:nth-of-type(4):hover {
+  color: #fff853;
+}
+
+/* Global Buttons */
+
+/* Global Forms */
+
+/* ---------- GLOBAL INDEX ---------- */
+.frontpage-image_index {
+  width: 100%;
+}
+
+/* Center-aligning texts in containers */
+
+/* Headers */
+.h1_index,
+.h1-para_index,
+.cont_header1_index,
+.cont_header2_index,
+.cont_header3_index,
+.cont_header4_index,
+
+/* Paragraphs */
+.cont_para5_index {
+  text-align: center;
+}
+
+/* Content color of all containers */
+.container-box1_index,
+.container-box2_index,
+.container-box3_index,
+.container-box4_index {
+  color: white;
+}
+
+/* 1st. container */
+.container-box1_index {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 75px;
+  background: rgb(43, 108, 182);
+  border: solid rgba(43, 108, 182, 0.75);
+  border-width: 15px 15px 0 0;
+}
+
+/* 2nd. container */
+.container-box2_index {
+  background: rgb(245, 131, 0);
+  border: solid rgba(245, 131, 0, 0.75);
+  border-width: 15px 15px 0 0;
+}
+
+/* 3rd. container */
+.container-box3_index {
+  background: rgb(35, 150, 56);
+  border: solid rgba(35, 150, 56, 0.75);
+  border-width: 15px 15px 0 0;
+}
+
+/* 4th. container */
+.container-box4_index {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 75px;
+  background: rgb(93, 9, 89);
+  border: solid rgba(93, 9, 89, 0.75);
+  border-width: 15px 15px 0 0;
+}
+
+.container-box1_index,
+.container-box2_index,
+.container-box3_index,
+.container-box4_index {
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+}
+
+.container_buttons_index {
+}
+
+.container_attribute_index {
+  color: white;
+  box-shadow: 0px 5px 10px grey;
+  height: 130px;
+}
+
+.museumlibrary-button_index {
+  background: url(/images/index/museumlibrary_button-image.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.museumcafe-button_index {
+  background: url(/images/index/cafe_button-image.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.museumshop-button_index {
+  background: url(/images/index/teddybeargirl_button-image.jpg) no-repeat center;
+  background-size: cover;
+}
+
+/* ---------- GLOBAL CONTACT ---------- */
+
+.main_contact {
+}
+
+.main_topsection_contact {
+  width: 100%;
+  height: 150px;
+  background: #2b6cb6;
+}
+
+.container-topsection_contact {
+  display: flex;
+  width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-header_contact {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  position: relative;
+  top: 30px;
+  transform: rotate(-3deg);
+  background: #ffa947;
+  height: 40px;
+  padding: 0 5px;
+  font-size: 26px;
+}
+
+.fa-comments {
+  position: relative;
+  top: 20px;
+  left: 100px;
+  color: white;
+}
+
+.contact-subheader_contact {
+  white-space: nowrap;
+  position: relative;
+  top: 110px;
+  right: 200px;
+  color: white;
+  font-size: 16px;
+}
+
+.main_section-1_contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.main_section-2_contact {
+  margin-top: 30px;
+  margin-left: 35%;
+  margin-right: 35%;
+}
+
+.fa-message {
+}
+
+.para-2_contact {
+}
+
+.form_contact {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.name_input,
+.email_input {
+  height: 25px;
+}
+
+.name_input,
+.email_input,
+.message_input {
+  margin-bottom: 15px;
+  border: 2px solid black;
+  border-radius: 3px;
+}
+
+.message_input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  box-sizing: border-box;
+  min-width: 400px;
+  max-width: 400px;
+}
+
+.newsletter-checkbox_contact {
+  margin-bottom: 20px;
+}
+
+.notrobot-verification_contact {
+  display: flex;
+  align-items: center;
+  width: 250px;
+  height: 50px;
+  background: #f5f5f5;
+  border: 2px solid gray;
+  border-radius: 3px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.norobot-verification-checkbox {
+  margin-left: 15px;
+}
+
+.norobot-checkbox-font {
+  font-size: 16px;
+}
+
+.fa-robot {
+  margin-left: 60px;
+}
+
+.submit-button_contact {
+  width: 220px;
+  height: 50px;
+  background: white;
+  border: 2px solid black;
+  border-radius: 3px;
+  font-size: 16px;
+  margin: 20px auto;
+}
+
+.main_bottomsection_contact {
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ---------- GLOBAL GET INVOLVED ---------- */
+
+.main_getinvolved {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.topsection_getinvolved,
+.midsection_getinvolved,
+.bottomsection_getinvolved {
+  margin-bottom: 50px;
+}
+
+.topsection_getinvolved {
+}
+
+.midsection_getinvolved {
+}
+
+.bottomsection_getinvolved {
+}
+
+.header1_getinvolved,
+.header2_getinvolved,
+.header3_getinvolved {
+  font-size: 30px;
+}
+
+.para1_getinvolved,
+.para2_getinvolved,
+.para3_getinvolved {
+  font-size: 20px;
+}
+
+/* ---------- GLOBAL EXHIBITION ---------- */
+
+.topsection-text_exhibition {
+  text-align: center;
+}
+
+.header1_exhibition {
+  font-size: 30px;
+}
+
+.para1_exhibition {
+  font-size: 20px;
+}
+
+.exhibition1_exhibition {
+  border: 3px solid #cccccc;
+  background: #151514;
+  color: white;
+  max-width: 1040px;
+  height: 650px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.exhibition1-image {
+  background: url(/images/exhibition/exhibition1.jpg) no-repeat;
+  background-size: 1140px 350px;
+  width: 1040px;
+  height: 320px;
+}
+
+.exhibition1_header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  bottom: 300px;
+  left: 30px;
+  transform: rotate(-5deg);
+  background: rgba(3, 76, 160, 0.75);
+  padding: 20px 0 20px 30px;
+  width: 215px;
+  font-size: 26px;
+}
+
+.exhibition1-bannername {
+  text-align: center;
+  font-size: 26px;
+  height: 50px;
+  background: rgba(3, 76, 160, 0.75);
+  position: relative;
+  bottom: 117px;
+}
+
+.exhibition1-content-container {
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+.exhibition1-content-container-heading {
+}
+
+.exhibition1-content-age {
+  position: relative;
+  bottom: 90px;
+  left: 100px;
+  font-size: 30px;
+}
+
+.exhibition1-content-category {
+  float: right;
+  position: relative;
+  bottom: 120px;
+  right: 100px;
+  font-size: 30px;
+}
+
+.exhibition1-content-para {
+  margin-top: 50px;
+  font-size: 26px;
+  position: relative;
+  bottom: 100px;
+}
+
+.exhibition2-5-container_exhibition {
+  display: grid;
+  grid-template-areas:
+    "exh1 exh2"
+    "exh3 exh4";
+  width: 1040px;
+  height: 540px;
+  margin: 75px auto 50px auto;
+  color: white;
+}
+
+.exhibition2_exhibition {
+  grid-area: exh1;
+  background: url(/images/exhibition/exhibition2.jpg) no-repeat;
+}
+
+.exhibition3_exhibition {
+  grid-area: exh2;
+  background: url(/images/exhibition/exhibition3.jpg) no-repeat;
+  margin-left: auto;
+}
+.exhibition4_exhibition {
+  grid-area: exh3;
+  background: url(/images/exhibition/exhibition4.jpg) no-repeat;
+  margin-top: auto;
+}
+.exhibition5_exhibition {
+  grid-area: exh4;
+  background: url(/images/exhibition/exhibition5.jpg) no-repeat;
+  margin-left: auto;
+  margin-top: auto;
+}
+
+.exhibition2_exhibition,
+.exhibition3_exhibition,
+.exhibition4_exhibition,
+.exhibition5_exhibition {
+  border: 2px solid gray;
+  background-size: cover;
+  width: 500px;
+  height: 220px;
+  box-shadow: 0px 5px 10px grey;
+}
+
+.exhibition2-bannername_exhibition,
+.exhibition3-bannername_exhibition,
+.exhibition4-bannername_exhibition,
+.exhibition5-bannername_exhibition {
+  text-align: center;
+  font-size: 26px;
+  height: 50px;
+  background: rgba(3, 76, 160, 0.75);
+  position: relative;
+  top: 170px;
+}
+
+.exhibition-bottom-line_exhibition {
+  max-width: 1040px;
+}
+
+.archive-link_exhibition {
+  text-decoration: none;
+  font-size: 26px;
+  margin: 50px auto 50px 380px;
+}
+
+/* ---------- GLOBAL ABOUT ---------- */
+
+.main_about {
+  background: linear-gradient(#060605, #161a1a);
+}
+
+.frontpage-image_about {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.h1_about {
+  text-align: center;
+  color: white;
+}
+
+.paragraphs_about {
+  max-width: 650px;
+  margin: 0 auto;
+  font-size: 22px;
+  color: white;
+}
+
+.para1_about,
+.para2_about,
+.para3_about,
+.para4_about {
+  margin-bottom: 100px;
+}
+
+.circle-images_about {
+  display: flex;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.mammoth-image_about {
+  background: url(/images/about/mammoth-image.jpg) no-repeat;
+}
+
+.dinohead-image_about {
+  background: url(/images/about/dinohead-image.jpg) no-repeat;
+}
+
+.mammoth-image_about,
+.dinohead-image_about {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
+
+.news_about {
+  width: 100%;
+  height: 500px;
+  background: lightblue;
+}
+
+.newsimages-section_about {
+  width: 400px;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+.news-images2_about {
+  background: url(/images/about/ants-image.jpg) no-repeat;
+  background-size: cover;
+  width: 380px;
+  height: 280px;
+  transform: rotate(-5deg);
+}
+
+.news-image-section_about {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  width: 380px;
+  height: 80px;
+  padding: 0 40px;
+  border-radius: 5px;
+  background: white;
+}
+
+.fa-circle-left:hover,
+.fa-circle-right:hover {
+  transition: 0.3s;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.news-image-para_about {
+  text-align: center;
+  font-size: 20px;
+  width: 350px;
+}
+
+.bottom-section_about {
+  width: 100%;
+  height: 500px;
+  padding: 50px 0 20px 0;
+  text-align: center;
+  background: lightpink;
+}
+
+.fa-youtube {
+  background: red;
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 50%;
+  color: white;
+}
+
+.youtube-header_about {
+  font-size: 26px;
+}
+
+.youtube-para_about {
+  font-size: 20px;
+}
+
+/* ---------- MOBILE STYLE ---------- */
+@media only screen and (max-width: 599px) {
+  /* global Mobile */
+
+  /* HEADER */
+  header {
+    height: 100px;
+  }
+
+  .nav-bar_desktop {
+    display: none;
+  }
+
+  .nav-bar_mobile {
+    display: flex;
+  }
+
+  .hamburgermenu_header {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    width: 60px;
+    height: 60px;
+  }
+
+  #hamburger-checkbox-mobile,
+  .nav-header {
+    display: none;
+  }
+
+  #hamburger-checkbox-mobile:checked ~ .nav-header {
+    transition: 1s ease-in-out;
+    display: block;
+  }
+
+  .nav__list_header {
+    position: absolute;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+
+  .navlist-mobile {
+    color: #f5f5f5; /* Does not currently work since links are clicked on */
+    padding: 35px 195px;
+    font-size: 24px;
+  }
+
+  .nav__list_header a:visited {
+    color: #f5f5f5;
+  }
+
+  .list-header1 {
+    background: red;
+  }
+  .list-header2 {
+    background: #2b6cb6;
+  }
+  .list-header3 {
+    background: #239638;
+  }
+  .list-header4 {
+    background: #5d0959;
+  }
+  .list-header5 {
+    background: #f58300;
+  }
+
+  .logo_header {
+    width: 200px;
+    height: 100px;
+  }
+
+  /* FOOTER */
+  footer {
+    height: 960px;
+  }
+
+  /* Does not work on all sites. Needs to be manually adjusted */
+  main {
+  }
+
+  /* Index */
+
+  /* Headers for all containers */
+  .cont_headers_index {
+    font-size: 26;
+  }
+  /* Parapraphs for all containers */
+  .cont_paragraphs_index {
+    font-size: 16px;
+  }
+
+  /* 1.st container */
+  .container-box1_index {
+    height: 440px;
+    width: 350px;
+  }
+
+  .cont_para1_index {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+
+  .cont_image1 {
+    margin-top: 15px;
+    margin-left: 10px;
+    height: 244px;
+    width: 340px;
+  }
+
+  .container-box2_index,
+  .container-box3_index {
+    height: 440px;
+    width: 540px;
+  }
+
+  .container-box2_index {
+    margin: 0 auto;
+  }
+
+  .container-box3_index {
+    margin: 0 auto;
+  }
+
+  .cont_para2_index,
+  .cont_para3_index {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .cont_image2,
+  .cont_image3 {
+    margin-top: 15px;
+    margin-left: 10px;
+    height: 210px;
+    width: 520px;
+  }
+
+  /* 4th. container */
+  .container-box4_index {
+    display: flex;
+    height: 300px;
+    width: 900px;
+  }
+
+  .cont_header4_index {
+    position: relative;
+    left: 200px;
+    bottom: 15px;
+  }
+
+  .cont_para4_index,
+  .cont_para5_index {
+    position: relative;
+    top: 100px;
+    right: 50px;
+  }
+
+  .cont_para5_index {
+  }
+
+  .cont_image4,
+  .cont_image5 {
+    border: 1px solid #cccccc;
+    height: 220px;
+    width: 220px;
+  }
+
+  .cont_image4 {
+    margin-top: 15px;
+    margin-left: 15px;
+  }
+
+  .cont_image5 {
+    margin-top: 15px;
+    margin-right: 15px;
+  }
+
+  /* Contact */
+
+  .main_topsection_contact {
+  }
+
+  .para-1_contact {
+    margin-left: 7%;
+    margin-right: 7%;
+  }
+}
+
+/* ---------- DESKTOP STYLE ---------- */
+@media only screen and (min-width: 600px) {
+  /* global Desktop */
+
+  header {
+    height: 146px;
+  }
+
+  .nav-bar_mobile {
+    display: none;
+  }
+
+  .nav-bar_desktop {
+    display: flex;
+    flex-grow: 1;
+  }
+
+  .nav__list_header {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1em;
+  }
+
+  /* Not sure what this was for. Seems to do nothing now.
+  .list-header {
+    text-decoration: none;
+    padding: 15px;
+  }
+  */
+
+  .logo_header {
+    width: 276px;
+    height: 140px;
+  }
+
+  .nav-header {
+    font-size: 26px;
+    margin-left: auto;
+    margin-top: auto;
+  }
+
+  .nav__list_header {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    gap: 1em;
+  }
+
+  .list-header {
+    text-decoration: none;
+    padding: 15px;
+  }
+
+  .nav__list_header a:visited {
+    color: black;
+  }
+
+  /* Have to fix animation. Hover color only on text - part 1 */
+  .nav__list_header a:hover {
+    color: white;
+  }
+
+  /* Have to fix animation. Hover color only on text - part 2 */
+  .list-header:hover {
+    transition: 0.3s ease;
+  }
+
+  .list-header:nth-of-type(1):hover {
+    background: #151514;
+  }
+  .list-header:nth-of-type(2):hover {
+    background: #2b6cb6;
+  }
+  .list-header:nth-of-type(3):hover {
+    background: #239638;
+  }
+  .list-header:nth-of-type(4):hover {
+    background: #5d0959;
+  }
+  .list-header:nth-of-type(5):hover {
+    background: #f58300;
+  }
+
+  .nav__list_header li:nth-of-type(1) {
+    margin-left: auto;
+  }
+
+  .nav__list_header li:nth-of-type(5) {
+    margin-right: 50px;
+  }
+
+  /* FOOTER */
+  footer {
+    height: 341px;
+  }
+
+  /* Index */
+
+  /* Headers for all containers */
+  .cont_headers_index {
+    font-size: 30px;
+  }
+  /* Parapraphs for all containers */
+  .cont_paragraphs_index {
+    font-size: 18px;
+  }
+
+  /* 1.st container */
+  .container-box1_index {
+    height: 633px;
+    width: 1000px;
+  }
+
+  .cont_para1_index {
+    margin-left: 120px;
+    margin-right: 120px;
+  }
+
+  .cont_image1 {
+    margin-top: 15px;
+    margin-left: 10px;
+    height: 472px;
+    width: 980px;
+  }
+
+  .multicontainer-box2_box3_index {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  /* 2nd. & 3rd. container */
+
+  .multicontainer-box2_box3_index {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 75px;
+  }
+
+  .container-box2_index,
+  .container-box3_index {
+    height: 440px;
+    width: 540px;
+  }
+
+  .container-box2_index {
+    grid-column: 1;
+    margin: 0 auto;
+  }
+
+  .container-box3_index {
+    grid-column: 2;
+    margin: 0 auto;
+  }
+
+  .cont_para2_index,
+  .cont_para3_index {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .cont_image2,
+  .cont_image3 {
+    margin-top: 15px;
+    margin-left: 10px;
+    height: 210px;
+    width: 520px;
+  }
+
+  /* 4th. container */
+  .container-box4_index {
+    display: flex;
+    height: 300px;
+    width: 900px;
+  }
+
+  .cont_header4_index {
+    position: relative;
+    left: 200px;
+    bottom: 15px;
+  }
+
+  .cont_para4_index,
+  .cont_para5_index {
+    position: relative;
+    top: 100px;
+    right: 50px;
+  }
+
+  .cont_para5_index {
+  }
+
+  .cont_image4,
+  .cont_image5 {
+    border: 1px solid #cccccc;
+    height: 220px;
+    width: 220px;
+  }
+
+  .cont_image4 {
+    margin-top: 15px;
+    margin-left: 15px;
+  }
+
+  .cont_image5 {
+    margin-top: 15px;
+    margin-right: 15px;
+  }
+
+  .container_buttons_index {
+    display: flex;
+  }
+
+  .container_attribute_index {
+    border-radius: 5px;
+    margin: 20px;
+    box-shadow: 0px 5px 10px grey;
+    width: 300px;
+    margin-bottom: 75px;
+  }
+
+  .museumlibrary-button_index {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .museumcafe-button_index {
+  }
+
+  .museumshop-button_index {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Contact */
+
+  .para-1_contact {
+    text-align: center;
+  }
 }
