@@ -13,16 +13,39 @@
 <body>
 
     <header>
-        <a href="index.html"><img class="logo_header" src="/images/globalimages/Headerlogo.png" alt="Musem-logo"></a>
-        <nav class="nav_header">
-            <ul class="nav__list_header">
-                <li class="list-header"><a href="index.html">Home</a></li>
-                <li class="list-header active"><a href="about.html">About</a></li>
-                <li class="list-header"><a href="contact.html">Contact</a></li>
-                <li class="list-header"><a href="exhibition.html">Exhibitions</a></li>
-                <li class="list-header"><a href="getinvolved.html">Get involved</a></li>
-            </ul>
-        </nav>
+        <section class="nav-bar_desktop">
+            <div class="logo-header-container">
+                <a href="index.html"><img class="logo_header" src="/images/globalimages/Headerlogo.png"
+                        alt="Musem-logo"></a>
+            </div>
+            <nav class="nav-header">
+                <ul class="nav__list_header">
+                    <li class="list-header"><a href="index.html">Home</a></li>
+                    <li class="list-header active"><a href="about.html">About</a></li>
+                    <li class="list-header"><a href="contact.html">Contact</a></li>
+                    <li class="list-header"><a href="exhibition.html">Exhibitions</a></li>
+                    <li class="list-header"><a href="getinvolved.html">Get involved</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <section class="nav-bar_mobile">
+            <input type="checkbox" id="hamburger-checkbox-mobile">
+            <label for="hamburger-checkbox-mobile"><img class="hamburgermenu_header"
+                    src="/images/globalimages/Hamburger-menu_mobile.png"></label>
+            <div class="logo-header-container">
+                <a href="index.html"><img class="logo_header" src="/images/globalimages/Headerlogo.png"
+                        alt="Musem-logo"></a>
+            </div>
+            <nav class="nav-header">
+                <ul class="nav__list_header">
+                    <li class="navlist-mobile list-header2"><a href="about.html">About</a></li>
+                    <li class="navlist-mobile list-header3"><a href="contact.html">Contact</a></li>
+                    <li class="navlist-mobile list-header4"><a href="exhibition.html">Exhibitions</a></li>
+                    <li class="navlist-mobile list-header5"><a href="getinvolved.html">Get involved</a></li>
+                </ul>
+            </nav>
+        </section>
     </header>
 
     <main class="main_about">
@@ -30,8 +53,8 @@
         <!-- front picture -->
         <img class="frontpage-image_about" src="images/about/museumoutside-image.jpg"
             alt="Homepage front image. Image of a museum">
-        <h1 class="h1_about">What is
-            Community Science Museum?</h1>
+        <h1 class="h1_about">What is <br>
+            Community Science <br> Museum?</h1>
 
         <section class="paragraphs_about">
             <p class="para1_about">Community Science Museum was opened 21. January 2001, and have allways had the vision
@@ -63,18 +86,10 @@
     <aside class="aside_about">
 
         <section class="news_about">
-            <section class="newsimages-section_about">
-                <!--Not in use atm
-                <div class="news-images1_about"></div>
-                -->
-                <div class="news-images2_about"></div>
-                <!--Not in use atm
-                <div class="news-images3_about"></div>
-                -->
-            </section>
+            <div class="news-image_about"></div>
             <section class="news-image-section_about">
                 <div><i class="fa-regular fa-circle-left fa-3x"></i></div>
-                <p class="news-image-para_about">One of our earlier exhibitions: “The world of ants”</p>
+                <p class="news-image-para_about">One of our earlier exhibitions: <br> “The world of ants”</p>
                 <div><i class="fa-regular fa-circle-right fa-3x"></i></div>
             </section>
         </section>
@@ -91,7 +106,7 @@
     <footer>
         <section class="left-section_footer">
             <i class="fa-regular fa-clock fa-2x"></i>
-            <h1 class="openhours-heading_footer">Today's opening hours</h1>
+            <h1 class="openhours-heading_footer">Today’s opening hours</h1>
             <h2 class="opnenours_subheading_footer">10:00 to 18:00</h2>
             <nav class="nav_openhours_footer">
                 <ul class="nav__list-openhours_footer">
@@ -112,7 +127,6 @@
             <h2 class="maps_subheading_footer">Vallergata 25, 3672 Ettermoen</h2>
             <img class="googlemaps_footer" src="/images/globalimages/googlemapslocation.png"
                 alt="an image of google-map with location of museum">
-            <div class="terms-and-condition-sub_footer">© 2022 All Rights Reserved. Terms & Conditions.</div>
         </section>
 
         <section class="right-section_footer">
@@ -121,11 +135,12 @@
                 on the latest news?</h1>
             <form class="newsletter-form_footer">
                 <label class="newsletter-label_footer" for="newsletter-email_footer">Sign up to our newsletter!</label>
+                <br>
                 <input class="newsletter-input_footer" type="email" id="newsletter-email_footer"
                     name="newsletter-email_footer" placeholder="Email address" required>
             </form>
             <button class="newsletter-signup_footer">Sign up</button>
-            <nav class="socialmedia-icons_footer">
+            <nav class="socialmedia-icons-desktop_footer">
                 <ul class="nav__list-socialmedia_footer">
                     <li><a href="www.facebook.com"><i class="fa-brands fa-square-facebook fa-3x"></i></a></li>
                     <li><a href="www.youtube.com"><i class="fa-brands fa-square-youtube fa-3x"></i></a></li>
@@ -136,6 +151,22 @@
             </nav>
         </section>
 
+        <section class="bottom-section-mobile_footer">
+            <nav class="socialmedia-icons-mobile_footer">
+                <ul class="nav__list-socialmedia-mobile_footer">
+                    <li><a href="www.facebook.com"><i class="fa-brands fa-square-facebook fa-3x"></i></a></li>
+                    <li><a href="www.youtube.com"><i class="fa-brands fa-square-youtube fa-3x"></i></a></li>
+                    <li><a href="www.instagram.com"><i class="fa-brands fa-square-instagram fa-3x"></a></i>
+                    </li>
+                    <li><a href="www.snapchat.com"><i class="fa-brands fa-square-snapchat fa-3x"></i></a></li>
+                </ul>
+            </nav>
+            <div class="terms-and-condition_footer">© 2022 All Rights Reserved. Terms & Conditions.</div>
+        </section>
+
+        <section class="bottom-section-desktop_footer">
+            <div class="terms-and-condition_footer">© 2022 All Rights Reserved. Terms & Conditions.</div>
+        </section>
     </footer>
 
 </body>
