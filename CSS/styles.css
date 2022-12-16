@@ -26,12 +26,19 @@
 .cont_headers_index, 
 
 /* ABOUT */
-.paragraphs_about
+.paragraphs_about, 
+.youtube-header_about,
+
 /* CONTACT */
 
 /* EXHIBITION */
 
-/* GET INVOLVED */ {
+/* EXHIBITION */
+.header1_exhibition,
+.bannernames-exhibition,
+
+/* GET INVOLVED */ 
+.headers_getinvolved {
   font-family: "futura-bold", Verdana, Tahoma, sans-serif; /* BOLD */
 }
 
@@ -43,13 +50,23 @@
 
 /* ABOUT */
 .h1_about,
+.news-image-para_about,
+.youtube-para_about,
 
 /* CONTACT */
-.news-image-para_about
+.contact-header_contact,
+.contact-subheader_contact,
+.main_section-1_contact,
+.form_contact label,
+.main_bottomsection_contact,
 
 /* EXHIBITION */
+.para1_exhibition,
+.exhibition1-content-para,
+.archive-link_exhibition,
 
-/* GET INVOLVED */ {
+/* GET INVOLVED */ 
+.paragraps_getinvolved {
   font-family: "futura-medium", Verdana, Tahoma, sans-serif; /* MEDIUM (Standard) */
 }
 
@@ -74,7 +91,7 @@
 
 /* Contact */
 .contact-subheader_contact,
-.norobot-checkbox-font, 
+.label-text-norobot, 
 .submit-button_contact {
   font-size: 16px;
 }
@@ -87,14 +104,13 @@
 
 /* --- 20px --- */
 /* Footer */
-.maps_subheading_footer,
+.maps-address_footer,
 
 /* About */
 .news-image-para_about, 
 .youtube-para_about,
 
 /* Exhibition */
-.para1_exhibition,
 
 /* Get involved */
 .para1_getinvolved,
@@ -123,10 +139,7 @@
 .exhibition1_header, 
 .exhibition1-bannername, 
 .exhibition1-content-para,
-.exhibition2-bannername_exhibition,
-.exhibition3-bannername_exhibition,
-.exhibition4-bannername_exhibition,
-.exhibition5-bannername_exhibition, 
+.bannernames-exhibition, 
 .archive-link_exhibition, 
 
 /* About */
@@ -144,7 +157,6 @@
 .header3_getinvolved, 
 
 /* Exhibition */
-.header1_exhibition, 
 .exhibition1-content-age, 
 .exhibition1-content-category {
   font-size: 30px;
@@ -162,11 +174,12 @@
 .cont_para5_index, 
 
 /* ABOUT */
-.h1_about
+.h1_about,
 
 /* CONTACT */
 
 /* EXHIBITION */
+.header1_exhibition
 
 /* GET INVOLVED */ {
   text-align: center;
@@ -276,9 +289,69 @@ footer {
   color: #fff853;
 }
 
-/* Global Buttons */
+/* Global Placeholders */
+/* All styling does not work on all browser. Firefox is having some issues with at least padding */
+input::placeholder,
+textarea::placeholder {
+  font-size: 14px;
+  font-family: "futura-medium", Verdana, Tahoma, sans-serif;
+  color: black;
+  opacity: 0.7;
+  padding-left: 5px;
+}
 
-/* Global Forms */
+/* Checkboxes */
+
+/* Newsletter checkbox - about */
+/* Does not work well with safari-browser */
+.newsletter-checkbox_contact {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  display: grid;
+  grid-template-columns: 1em auto;
+  gap: 1em;
+}
+
+input[type="checkbox"] {
+  cursor: pointer;
+  margin: 0;
+  font: inherit;
+  height: 1.5em;
+  width: 1.5em;
+  border-radius: 0.15em;
+}
+
+input[type="checkbox"]:hover {
+  transition: 0.3s ease-in-out;
+  box-shadow: 1px 1px 5px 0 grey;
+}
+
+.label-text2 {
+  display: none;
+}
+
+#checkbox-newsletter:checked ~ .label-text1 {
+  display: none;
+}
+#checkbox-newsletter:checked ~ .label-text2 {
+  display: block;
+}
+
+/* No robot checkbox - about */
+#checkbox-norobot {
+  margin-left: 15px;
+}
+
+.label-text-norobot {
+  margin-left: 5px;
+  position: relative;
+  bottom: 5px;
+}
+
+.fa-robot {
+  margin-left: 40px;
+}
 
 /* ---------- GLOBAL INDEX ---------- */
 .frontpage-image_index {
@@ -471,9 +544,8 @@ footer {
 
 .bottom-section_about {
   width: 100%;
-  height: 500px;
-  padding: 50px 0 20px 0;
   text-align: center;
+  padding: 30px 0 10px 0;
   background: lightpink;
 }
 
@@ -486,9 +558,6 @@ footer {
 }
 
 /* ---------- GLOBAL CONTACT ---------- */
-
-.main_contact {
-}
 
 .main_topsection_contact {
   width: 100%;
@@ -512,13 +581,14 @@ footer {
   transform: rotate(-3deg);
   background: #ffa947;
   height: 40px;
-  padding: 0 5px;
+  padding: 0 20px;
+  box-shadow: 5px 5px 5px 0 rgb(0, 0, 0, 0.5);
 }
 
 .fa-comments {
   position: relative;
-  top: 20px;
-  left: 100px;
+  top: 25px;
+  left: 90px;
   color: white;
 }
 
@@ -526,38 +596,29 @@ footer {
   white-space: nowrap;
   position: relative;
   top: 110px;
-  right: 200px;
+  right: 265px;
   color: white;
-}
-
-.main_section-1_contact {
-  display: flex;
-  flex-direction: column;
 }
 
 .main_section-2_contact {
   margin-top: 30px;
-  margin-left: 35%;
-  margin-right: 35%;
 }
 
 .form_contact {
   display: flex;
   flex-direction: column;
-  width: 400px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
 }
 
 .name_input,
 .email_input {
-  height: 25px;
+  height: 30px;
 }
 
 .name_input,
 .email_input,
 .message_input {
-  margin-bottom: 15px;
+  margin-bottom: 25px;
   border: 2px solid black;
   border-radius: 3px;
 }
@@ -567,178 +628,79 @@ footer {
   -moz-appearance: none;
   appearance: none;
   box-sizing: border-box;
-  min-width: 400px;
-  max-width: 400px;
-}
-
-.newsletter-checkbox_contact {
-  margin-bottom: 20px;
 }
 
 .notrobot-verification_contact {
   display: flex;
   align-items: center;
-  width: 250px;
-  height: 50px;
+  width: 275px;
+  height: 60px;
   background: #f5f5f5;
   border: 2px solid gray;
   border-radius: 3px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.norobot-verification-checkbox {
-  margin-left: 15px;
-}
-
-.fa-robot {
-  margin-left: 60px;
+  margin: 20px auto;
 }
 
 .submit-button_contact {
   width: 220px;
   height: 50px;
-  background: white;
+  background: #2b6cb6;
+  color: white;
   border: 2px solid black;
   border-radius: 3px;
   margin: 20px auto;
 }
 
+.submit-button_contact:hover {
+  transition: 0.3s ease-in-out;
+  background: #1c5eaa;
+}
+
+.submit-button_contact:active {
+  transition: 0.1s ease-in-out;
+  background: rgb(7, 158, 7);
+}
+
 .main_bottomsection_contact {
-  width: 400px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 360px;
+  margin: 30px auto;
 }
 
 /* ---------- GLOBAL EXHIBITION ---------- */
 
-.topsection-text_exhibition {
-  text-align: center;
-}
-
-.exhibition1_exhibition {
-  border: 3px solid #cccccc;
-  background: #151514;
-  color: white;
-  max-width: 1040px;
-  height: 650px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.exhibition1-image {
-  background: url(/images/exhibition/exhibition1.jpg) no-repeat;
-  background-size: 1140px 350px;
-  width: 1040px;
-  height: 320px;
-}
-
-.exhibition1_header {
-  position: relative;
-  display: flex;
-  align-items: center;
-  bottom: 300px;
-  left: 30px;
-  transform: rotate(-5deg);
-  background: rgba(3, 76, 160, 0.75);
-  padding: 20px 0 20px 30px;
-  width: 215px;
-}
-
-.exhibition1-bannername {
-  text-align: center;
-  height: 50px;
-  background: rgba(3, 76, 160, 0.75);
-  position: relative;
-  bottom: 117px;
-}
-
-.exhibition1-content-container {
-  margin-left: 3%;
-  margin-right: 3%;
-}
-
-.exhibition1-content-age {
-  position: relative;
-  bottom: 90px;
-  left: 100px;
-}
-
-.exhibition1-content-category {
-  float: right;
-  position: relative;
-  bottom: 120px;
-  right: 100px;
-}
-
-.exhibition1-content-para {
-  margin-top: 50px;
-  position: relative;
-  bottom: 100px;
-}
-
 .exhibition2-5-container_exhibition {
-  display: grid;
-  grid-template-areas:
-    "exh1 exh2"
-    "exh3 exh4";
-  width: 1040px;
-  height: 540px;
-  margin: 75px auto 50px auto;
   color: white;
+}
+
+.exhibition1-mobile_exhibition {
+  background: url(/images/exhibition/exhibition1.jpg) no-repeat;
 }
 
 .exhibition2_exhibition {
-  grid-area: exh1;
   background: url(/images/exhibition/exhibition2.jpg) no-repeat;
 }
 
 .exhibition3_exhibition {
-  grid-area: exh2;
   background: url(/images/exhibition/exhibition3.jpg) no-repeat;
-  margin-left: auto;
 }
 .exhibition4_exhibition {
-  grid-area: exh3;
   background: url(/images/exhibition/exhibition4.jpg) no-repeat;
-  margin-top: auto;
 }
 .exhibition5_exhibition {
-  grid-area: exh4;
   background: url(/images/exhibition/exhibition5.jpg) no-repeat;
-  margin-left: auto;
-  margin-top: auto;
 }
 
-.exhibition2_exhibition,
-.exhibition3_exhibition,
-.exhibition4_exhibition,
-.exhibition5_exhibition {
+.containers-exhibition {
   border: 2px solid gray;
   background-size: cover;
-  width: 500px;
-  height: 220px;
   box-shadow: 0px 5px 10px grey;
 }
 
-.exhibition2-bannername_exhibition,
-.exhibition3-bannername_exhibition,
-.exhibition4-bannername_exhibition,
-.exhibition5-bannername_exhibition {
+.bannernames-exhibition {
+  align-items: center;
   text-align: center;
-  height: 50px;
+  padding: 8px 0;
   background: rgba(3, 76, 160, 0.75);
-  position: relative;
-  top: 170px;
-}
-
-.exhibition-bottom-line_exhibition {
-  max-width: 1040px;
-}
-
-.archive-link_exhibition {
-  text-decoration: none;
-  margin: 50px auto 50px 380px;
 }
 
 /* ---------- GLOBAL GET INVOLVED ---------- */
@@ -755,13 +717,51 @@ footer {
   margin-bottom: 50px;
 }
 
-.topsection_getinvolved {
+.headers_getinvolved {
+  width: fit-content;
+  cursor: pointer;
 }
 
-.midsection_getinvolved {
+.topsection-container_getinvolved {
+  color: white;
+  background: rgb(87, 155, 44);
+  border: 10px solid rgb(67, 122, 32);
+  padding: 0 15px 15px;
 }
 
-.bottomsection_getinvolved {
+.image1_getinvolved {
+  background: url(/images/getinvolved/support-image.jpg) no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+}
+
+.midsection-container_getinvolved {
+  color: white;
+  background: rgb(243, 6, 6);
+  border: 10px solid rgb(196, 33, 8);
+  padding: 0 15px 15px;
+}
+
+.image2_getinvolved {
+  background: url(/images/getinvolved/volunteer-image.jpg) no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+}
+
+.bottomsection-container_getinvolved {
+  color: white;
+  background: rgb(6, 127, 232);
+  border: 10px solid rgb(7, 90, 131);
+  padding: 0 15px 15px;
+}
+
+.image3_getinvolved {
+  background: url(/images/getinvolved/internship-image.jpg) no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 400px;
 }
 
 /* ---------- MOBILE STYLE ---------- */
@@ -775,7 +775,19 @@ footer {
   
   /* About */
   .paragraphs_about,  
-  .news-image-para_about {
+  .news-image-para_about, 
+  .youtube-para_about, 
+  
+  /* Contact */
+  .main_section-1_contact, 
+  .form_contact label,
+  .main_bottomsection_contact,
+  
+  /* Get involved */
+  .paragraps_getinvolved,
+  
+  /* Exhibition */
+  .para1_exhibition {
     font-size: 16px;
   }
 
@@ -783,7 +795,14 @@ footer {
     font-size: 24px;
   }
 
-  .cont_headers_index {
+  /* Index */
+  .cont_headers_index,
+  
+  /* About */ 
+  .youtube-header_about,
+  
+  /* Exhibition */
+  .header1_exhibition {
     font-size: 26px;
   }
 
@@ -1054,6 +1073,10 @@ footer {
     margin: 0 10%;
   }
 
+  .bottom-section_about {
+    height: 500px;
+  }
+
   .news-image_about {
     width: 308px;
     height: 225px;
@@ -1068,14 +1091,75 @@ footer {
     top: 175px;
   }
 
-  /* --- CONTACT --- */
-
-  .main_topsection_contact {
+  .youtube-video_about {
+    width: 392px;
+    height: 221px;
   }
 
-  .para-1_contact {
-    margin-left: 7%;
-    margin-right: 7%;
+  /* --- CONTACT --- */
+
+  .main_section-1_contact,
+  .main_section-2_contact {
+    width: 330px;
+    margin: 25px auto;
+  }
+
+  .form_contact {
+    width: 70%;
+  }
+
+  /* Hovers a little bit outside of forms, at least on Safari */
+  .form_contact label {
+    padding-left: 2px;
+  }
+
+  /* 100% makes this wider then the rest of the form. 
+  The scaling might be a bit off on different screen sizes, but seems to work in most cases */
+  .message_input {
+    min-width: 99%;
+    max-width: 99%;
+  }
+
+  /* --- EXHIBITION --- */
+  .exhibition1_exhibition {
+    display: none;
+  }
+
+  .para1_exhibition {
+    margin: 20px 10%;
+  }
+
+  .exhibition2-5-container_exhibition {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-bottom: 50px;
+    align-items: center;
+  }
+
+  .containers-exhibition {
+    width: 90%;
+    height: 190px;
+  }
+
+  .bannernames-exhibition {
+    margin-top: 139px;
+  }
+
+  .exhibition-bottom-line_exhibition {
+    max-width: 90%;
+  }
+
+  .archive-link_exhibition {
+    width: 80%;
+    text-align: center;
+    margin: 20px auto;
+  }
+
+  /* --- GET INVOLVED --- */
+
+  .main_getinvolved {
+    max-width: 95%;
   }
 }
 
@@ -1089,14 +1173,28 @@ footer {
   .cont_paragraphs_index, 
   
   /* About */
-  .news-image-para_about {
+  .news-image-para_about,   
+  .youtube-para_about,
+  
+  /* Contact */
+  .form_contact label {
     font-size: 18px;
   }
 
   /* --- 20px --- */
 
   /* About */
-  .paragraphs_about {
+  .paragraphs_about, 
+  
+  /* Contact */
+  .main_section-1_contact,
+  .main_bottomsection_contact, 
+  
+  /* Get involved */
+  .paragraps_getinvolved, 
+  
+  /* Exhibition */
+  .para1_exhibition {
     font-size: 20px;
   }
 
@@ -1106,7 +1204,15 @@ footer {
   }
 
   /* --- 30px --- */
-  .cont_headers_index {
+
+  /* Index */
+  .cont_headers_index, 
+  
+  /* About */
+  .youtube-header_about,
+  
+  /* Exhibition */
+  .header1_exhibition {
     font-size: 30px;
   }
 
@@ -1442,9 +1548,167 @@ footer {
     top: 120px;
   }
 
+  .bottom-section_about {
+    height: 600px;
+  }
+
+  .youtube-header_about {
+  }
+
+  .youtube-para_about {
+    width: 500px;
+    margin: 0 auto 30px auto;
+  }
+
+  .youtube-video_about {
+    width: 560px;
+    height: 315px;
+  }
+
   /* --- CONTACT --- */
 
-  .para-1_contact {
+  .main_section-1_contact,
+  .main_section-2_contact {
+    width: 500px;
+    margin: 25px auto;
+  }
+
+  .form_contact {
+    width: 500px;
+  }
+
+  .message_input {
+    min-width: 500px;
+    max-width: 500px;
+  }
+
+  /* --- EXHIBITION --- */
+
+  .exhibition1-mobile_exhibition {
+    display: none;
+  }
+
+  .para1_exhibition {
+    margin: 30px 5%;
     text-align: center;
+  }
+
+  .exhibition1_exhibition {
+    border: 3px solid #cccccc;
+    background: #151514;
+    color: white;
+    max-width: 1040px;
+    height: 650px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .exhibition1-image {
+    background: url(/images/exhibition/exhibition1.jpg) no-repeat;
+    background-size: 1140px 350px;
+    width: 1040px;
+    height: 320px;
+  }
+
+  .exhibition1_header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    bottom: 300px;
+    left: 30px;
+    transform: rotate(-5deg);
+    background: rgba(3, 76, 160, 0.75);
+    padding: 20px 0 20px 30px;
+    width: 215px;
+  }
+
+  .exhibition1-bannername {
+    text-align: center;
+    height: 50px;
+    background: rgba(3, 76, 160, 0.75);
+    position: relative;
+    bottom: 117px;
+  }
+
+  .exhibition1-content-container {
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+
+  .exhibition1-content-age {
+    position: relative;
+    bottom: 90px;
+    left: 100px;
+  }
+
+  .exhibition1-content-category {
+    float: right;
+    position: relative;
+    bottom: 120px;
+    right: 100px;
+  }
+
+  .exhibition1-content-para {
+    margin-top: 50px;
+    position: relative;
+    bottom: 100px;
+  }
+
+  .exhibition2-5-container_exhibition {
+    display: grid;
+    grid-template-areas:
+      "exh1 exh2"
+      "exh3 exh4";
+    width: 1040px;
+    height: 540px;
+    margin: 75px auto 50px auto;
+  }
+
+  .containers-exhibition {
+    width: 500px;
+    height: 220px;
+  }
+
+  .containers-exhibition:hover {
+    transition: 0.2s ease-in-out;
+    opacity: 0.5;
+    cursor: pointer;
+  }
+
+  .exhibition2_exhibition {
+    grid-area: exh1;
+  }
+
+  .exhibition3_exhibition {
+    grid-area: exh2;
+    margin-left: auto;
+  }
+  .exhibition4_exhibition {
+    grid-area: exh3;
+    margin-top: auto;
+  }
+  .exhibition5_exhibition {
+    grid-area: exh4;
+    margin-left: auto;
+    margin-top: auto;
+  }
+
+  .bannernames-exhibition {
+    margin-top: 171px;
+  }
+
+  .exhibition-bottom-line_exhibition {
+    max-width: 80%;
+  }
+
+  .archive-link_exhibition {
+    text-align: center;
+    margin: 30px auto;
+  }
+
+  /* --- GET INVOLVED --- */
+
+  .main_getinvolved {
+    max-width: 800px;
   }
 }
