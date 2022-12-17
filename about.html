@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Semester project 1 - Index</title>
-    <meta name="description" content="Semester Project 1 - Index" />
+    <title>Semester project 1 - About</title>
+    <meta name="description" content="Semester Project 1 - About" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="css/styles.css">
     <script src="https://kit.fontawesome.com/4652493b4c.js" crossorigin="anonymous"></script>
 </head>
-
 
 <body>
 
@@ -50,9 +49,9 @@
 
     <main class="main_about">
 
-        <!-- front picture -->
+        <!-- front picture and site heading -->
         <img class="frontpage-image_about" src="images/about/museumoutside-image.jpg"
-            alt="Homepage front image. Image of a museum">
+            alt="Outside of a wide building with the letters 'museum' written on it">
         <h1 class="h1_about">What is <br>
             Community Science <br> Museum?</h1>
 
@@ -75,11 +74,6 @@
                 gone
                 home)</p>
         </section>
-
-        <div class="circle-images_about">
-            <div class="mammoth-image_about"></div>
-            <div class="dinohead-image_about"></div>
-        </div>
 
     </main>
 
@@ -126,10 +120,14 @@
 
         <section class="center-section_footer">
             <i class="fa-solid fa-location-dot fa-2x"></i>
-            <h1 class="maps-heading_footer">Map & directions</h1>
-            <h2 class="maps_subheading_footer">Vallergata 25, 3672 Ettermoen</h2>
-            <img class="googlemaps_footer" src="/images/globalimages/googlemapslocation.png"
-                alt="an image of google-map with location of museum">
+            <!-- Not very semantic to embed the map and header in an "a href", but it works -->
+            <a href="https://www.google.com/maps">
+                <h1 class="maps-heading_footer">Map & directions</h1>
+                <address class="maps-address_footer">
+                    Address 25, 3210 Etteretter</address>
+                <img class="googlemaps_footer" src="/images/globalimages/googlemapslocation.png"
+                    alt="A google-map with location of museum">
+            </a>
         </section>
 
         <section class="right-section_footer">
@@ -141,8 +139,10 @@
                 <br>
                 <input class="newsletter-input_footer" type="email" id="newsletter-email_footer"
                     name="newsletter-email_footer" placeholder="Email address" required>
+                <br>
+                <button class="newsletter-signup_footer" type="submit">Sign up</button>
             </form>
-            <button class="newsletter-signup_footer">Sign up</button>
+
             <nav class="socialmedia-icons-desktop_footer">
                 <ul class="nav__list-socialmedia_footer">
                     <li><a href="www.facebook.com"><i class="fa-brands fa-square-facebook fa-3x"></i></a></li>
@@ -164,11 +164,11 @@
                     <li><a href="www.snapchat.com"><i class="fa-brands fa-square-snapchat fa-3x"></i></a></li>
                 </ul>
             </nav>
-            <div class="terms-and-condition_footer">© 2022 All Rights Reserved. Terms & Conditions.</div>
+            <div class="terms-and-condition-mobile_footer">© 2022 All Rights Reserved. Terms & Conditions.</div>
         </section>
 
         <section class="bottom-section-desktop_footer">
-            <div class="terms-and-condition_footer">© 2022 All Rights Reserved. Terms & Conditions.</div>
+            <div class="terms-and-condition-desktop_footer">© 2022 All Rights Reserved. Terms & Conditions.</div>
         </section>
     </footer>
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <title>Semester project 1 - Index</title>
@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="css/styles.css">
     <script src="https://kit.fontawesome.com/4652493b4c.js" crossorigin="anonymous"></script>
 </head>
-
 
 <body>
 
@@ -51,7 +50,7 @@
     <main class="main_index">
         <!-- front picture and site heading -->
         <img class="frontpage-image_index" src="images/index/frontpage-image.jpg"
-            alt="Homepage front image. Image of a young girl staring at a chalkboard">
+            alt="A young girl staring at a chalkboard full of math and physic formulas">
         <h1 class="h1_index">Explore together</h1>
         <p class="h1-para_index">Come join us at the Community Science Museum where we’re committed to making
             science accessible to all.
@@ -71,10 +70,10 @@
                     they see fit.</p>
             </div>
             <img class="cont_image1" src="images/index/freeentrance-image.jpg"
-                alt="A picture of a museum entrance full of people, and a giant fossil hanging down from the ceiling">
+                alt="A museum entrance full of people, and a giant fossil hanging down from the ceiling">
         </div>
 
-        <!-- Container 2 - Guided tours & 3 - Accessibility -->
+        <!-- Container 2 - Guided tours / 3 - Accessibility -->
         <div class="multicontainer-box2_box3_index">
             <div class="container-box2_index">
                 <div class="cont_headers_index">
@@ -89,7 +88,7 @@
                         arrange the tour.</p>
                 </div>
                 <img class="cont_image2" src="images/index/guidedtours-image.jpg"
-                    alt="A picture of tourists showed around by a guide">
+                    alt="Tourists showed around by a guide">
             </div>
 
             <div class="container-box3_index">
@@ -102,13 +101,13 @@
                         visually impaired. </p>
                 </div>
                 <img class="cont_image3" src="images/index/physicaldisabillities-images.jpg"
-                    alt="A picture of five joyful kids with different physical disabillities">
+                    alt="Five joyful kids with different disabillities">
             </div>
         </div>
 
-        <!-- Container 4 Part 1 - Exhibition Spaces-->
+        <!-- Container 4 - Exhibition Spaces-->
         <div class="container-box4_index">
-            <img class="cont_image4" src="images/index/exhibitionspaces-image1.jpg" alt="A picture of a children toy">
+            <img class="cont_image4" src="images/index/exhibitionspaces-image1.jpg" alt="A children toy">
             <div class="cont_headers_index">
                 <h5 class="cont_header4_index cont_headers_index">Exhibition Spaces</h5>
             </div>
@@ -121,7 +120,7 @@
                         to see them all!</a></p>
             </div>
             <img class="cont_image5" src="images/index/exhibitionspaces-image2.jpg"
-                alt="A picture of a teenager painting with a VR-headset on">
+                alt="A teenager painting with a VR-headset on">
         </div>
 
     </main>
@@ -175,11 +174,14 @@
 
         <section class="center-section_footer">
             <i class="fa-solid fa-location-dot fa-2x"></i>
-            <h1 class="maps-heading_footer">Map & directions</h1>
-            <address class="maps-address_footer">
-                Vallergata 25, 3672 Ettermoen</address>
-            <img class="googlemaps_footer" src="/images/globalimages/googlemapslocation.png"
-                alt="an image of google-map with location of museum">
+            <!-- Not very semantic to embed the map and header in an "a href", but it works -->
+            <a href="https://www.google.com/maps">
+                <h1 class="maps-heading_footer">Map & directions</h1>
+                <address class="maps-address_footer">
+                    Address 25, 3210 Etteretter</address>
+                <img class="googlemaps_footer" src="/images/globalimages/googlemapslocation.png"
+                    alt="A Google-map with location of museum">
+            </a>
         </section>
 
         <section class="right-section_footer">
@@ -191,8 +193,10 @@
                 <br>
                 <input class="newsletter-input_footer" type="email" id="newsletter-email_footer"
                     name="newsletter-email_footer" placeholder="Email address" required>
+                <br>
+                <button class="newsletter-signup_footer" type="submit">Sign up</button>
             </form>
-            <button class="newsletter-signup_footer">Sign up</button>
+
             <nav class="socialmedia-icons-desktop_footer">
                 <ul class="nav__list-socialmedia_footer">
                     <li><a href="www.facebook.com"><i class="fa-brands fa-square-facebook fa-3x"></i></a></li>
@@ -214,11 +218,11 @@
                     <li><a href="www.snapchat.com"><i class="fa-brands fa-square-snapchat fa-3x"></i></a></li>
                 </ul>
             </nav>
-            <div class="terms-and-condition_footer">© 2022 All Rights Reserved. Terms & Conditions.</div>
+            <div class="terms-and-condition-mobile_footer">© 2022 All Rights Reserved. Terms & Conditions.</div>
         </section>
 
         <section class="bottom-section-desktop_footer">
-            <div class="terms-and-condition_footer">© 2022 All Rights Reserved. Terms & Conditions.</div>
+            <div class="terms-and-condition-desktop_footer">© 2022 All Rights Reserved. Terms & Conditions.</div>
         </section>
     </footer>
 

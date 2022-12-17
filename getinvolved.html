@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Semester project 1 - Index</title>
-    <meta name="description" content="Semester Project 1 - Index" />
+    <title>Semester project 1 - Get involed</title>
+    <meta name="description" content="Semester Project 1 - Get involved" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="css/styles.css">
     <script src="https://kit.fontawesome.com/4652493b4c.js" crossorigin="anonymous"></script>
 </head>
-
 
 <body>
 
@@ -49,7 +48,14 @@
     </header>
 
     <main class="main_getinvolved">
+
         <section class="topsection_getinvolved">
+            <section class="header-section_getinvolved">
+                <h1 class="h1_getinvolved">Are you interested in the museum?</h1>
+                <p class="para-header_getinvolved">There are multiple ways you can help us out! <br> Check out the
+                    sections below to see what it's all about.</p>
+            </section>
+
             <h1 class="header1_getinvolved headers_getinvolved">Support</h1>
             <div class="topsection-container_getinvolved">
                 <p class="para1_getinvolved paragraps_getinvolved">There are various ways you can support the museum.
@@ -64,6 +70,7 @@
                 <div class="image1_getinvolved"></div>
             </div>
         </section>
+
         <section class="midsection_getinvolved">
             <h2 class="header2_getinvolved headers_getinvolved">Volunteer</h2>
             <div class="midsection-container_getinvolved">
@@ -80,6 +87,7 @@
                 <div class="image2_getinvolved"></div>
             </div>
         </section>
+
         <section class="bottomsection_getinvolved">
             <h3 class="header3_getinvolved headers_getinvolved">Internship</h3>
             <div class="bottomsection-container_getinvolved">
@@ -117,10 +125,14 @@
 
         <section class="center-section_footer">
             <i class="fa-solid fa-location-dot fa-2x"></i>
-            <h1 class="maps-heading_footer">Map & directions</h1>
-            <h2 class="maps_subheading_footer">Vallergata 25, 3672 Ettermoen</h2>
-            <img class="googlemaps_footer" src="/images/globalimages/googlemapslocation.png"
-                alt="an image of google-map with location of museum">
+            <!-- Not very semantic to embed the map and header in an "a href", but it works -->
+            <a href="https://www.google.com/maps">
+                <h1 class="maps-heading_footer">Map & directions</h1>
+                <address class="maps-address_footer">
+                    Address 25, 3210 Etteretter</address>
+                <img class="googlemaps_footer" src="/images/globalimages/googlemapslocation.png"
+                    alt="A Google-map with location of museum">
+            </a>
         </section>
 
         <section class="right-section_footer">
@@ -132,8 +144,10 @@
                 <br>
                 <input class="newsletter-input_footer" type="email" id="newsletter-email_footer"
                     name="newsletter-email_footer" placeholder="Email address" required>
+                <br>
+                <button class="newsletter-signup_footer" type="submit">Sign up</button>
             </form>
-            <button class="newsletter-signup_footer">Sign up</button>
+
             <nav class="socialmedia-icons-desktop_footer">
                 <ul class="nav__list-socialmedia_footer">
                     <li><a href="www.facebook.com"><i class="fa-brands fa-square-facebook fa-3x"></i></a></li>
@@ -155,11 +169,11 @@
                     <li><a href="www.snapchat.com"><i class="fa-brands fa-square-snapchat fa-3x"></i></a></li>
                 </ul>
             </nav>
-            <div class="terms-and-condition_footer">© 2022 All Rights Reserved. Terms & Conditions.</div>
+            <div class="terms-and-condition-mobile_footer">© 2022 All Rights Reserved. Terms & Conditions.</div>
         </section>
 
         <section class="bottom-section-desktop_footer">
-            <div class="terms-and-condition_footer">© 2022 All Rights Reserved. Terms & Conditions.</div>
+            <div class="terms-and-condition-desktop_footer">© 2022 All Rights Reserved. Terms & Conditions.</div>
         </section>
     </footer>
 
