@@ -20,7 +20,7 @@
 
 /* INDEX */
 .h1_index,
-.cont_headers_index, 
+.cont-headers_index, 
 /* ABOUT */
 .paragraphs_about, 
 .youtube-header_about,
@@ -37,7 +37,7 @@
 
 /* INDEX */
 .h1-para_index,
-.cont_paragraphs_index,
+.cont-paragraphs_index,
 .container_buttons-text1_index,
 .container_buttons-text2_index,
 /* ABOUT */
@@ -47,9 +47,9 @@
 /* CONTACT */
 .contact-header_contact,
 .contact-subheader_contact,
-.main_section-1_contact,
+.main-section-1_contact,
 .form_contact label,
-.main_bottomsection_contact,
+.main-bottomsection_contact,
 /* EXHIBITION */
 .para1_exhibition,
 .exhibition1-content-para,
@@ -70,7 +70,7 @@
 
 /* --- 16px --- */
 /* FOOTER */
-.nav__list-openhours_footer,
+.navlist-openhours_footer,
 .openhours-heading_footer,
 .maps-heading_footer,
 .terms-and-condition_footer,
@@ -107,7 +107,7 @@
 
 /* --- 26px --- */
 /* FOOTER */
-.opnenours_subheading_footer,
+.opnenours-subheading_footer,
 /* INDEX */
 .container_buttons-text2_index,
 /* CONTACT */
@@ -139,15 +139,15 @@
 @media only screen and (max-width: 599px) {
   /* --- 14px --- */
   /* INDEX */
-  .cont_paragraphs_index,
+  .cont-paragraphs_index,
   /* ABOUT */
   .paragraphs_about,  
   .news-image-para_about, 
   .youtube-para_about, 
   /* CONTACT */
-  .main_section-1_contact, 
+  .main-section-1_contact, 
   .form_contact label,
-  .main_bottomsection_contact,
+  .main-bottomsection_contact,
   /* GET INVOLVED */
   .para-header_getinvolved,
   .paragraps_getinvolved,
@@ -157,7 +157,7 @@
   }
 
   /* INDEX */
-  .cont_headers_index,
+  .cont-headers_index,
   /* ABOUT */ 
   .youtube-header_about,
   /* EXHIBITION */
@@ -177,7 +177,7 @@
 
   /* --- 18px --- */
   /* INDEX */
-  .cont_paragraphs_index, 
+  .cont-paragraphs_index, 
   /* ABOUT */
   .news-image-para_about,   
   .youtube-para_about,
@@ -190,8 +190,8 @@
   /* ABOUT */
   .paragraphs_about, 
   /* CONTACT */
-  .main_section-1_contact,
-  .main_bottomsection_contact, 
+  .main-section-1_contact,
+  .main-bottomsection_contact, 
   /* GET INVOLVED */
   .para-header_getinvolved,
   .paragraps_getinvolved, 
@@ -202,13 +202,13 @@
 
   /* --- 26px --- */
   /* HEADER */
-  .nav-header {
+  .nav_header {
     font-size: 26px;
   }
 
   /* --- 30px --- */
   /* INDEX */
-  .cont_headers_index, 
+  .cont-headers_index, 
   /* ABOUT */
   .youtube-header_about,
   /* EXHIBITION */
@@ -223,11 +223,11 @@
 /* INDEX */
 .h1_index,
 .h1-para_index,
-.cont_header1_index,
-.cont_header2_index,
-.cont_header3_index,
-.cont_header4_index,
-.cont_para5_index, 
+.cont-header1_index,
+.cont-header2_index,
+.cont-header3_index,
+.cont-header4_index,
+.cont-para5_index, 
 
 /* ABOUT */
 .h1_about,
@@ -277,7 +277,7 @@ header {
   background: lightgray;
 }
 
-.nav__list_header {
+.navlist_header {
   font-family: "architects-daughter";
   list-style: none;
   text-decoration: none;
@@ -298,13 +298,13 @@ footer {
   margin-top: 35px;
 }
 
-.nav__list-openhours_footer {
+.navlist-openhours_footer {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.nav__list-openhours_footer li {
+.navlist-openhours_footer li {
   margin-bottom: 5px;
 }
 
@@ -338,7 +338,7 @@ footer {
 }
 
 /* Social Media icons */
-.nav__list-socialmedia_footer a:visited {
+.navlist-socialmedia_footer a:visited {
   color: white;
 }
 
@@ -436,7 +436,7 @@ input[type="checkbox"]:hover {
   background-clip: padding-box;
 }
 
-.cont_para5_index {
+.cont-para5_index {
   background: #151514;
   transform: rotate(-3deg);
   box-shadow: 5px 5px 5px black;
@@ -565,7 +565,7 @@ input[type="checkbox"]:hover {
 }
 
 /* ---------- GLOBAL CONTACT ---------- */
-.main_topsection_contact {
+.main-topsection_contact {
   width: 100%;
   height: 150px;
   background: #2b6cb6;
@@ -606,7 +606,7 @@ input[type="checkbox"]:hover {
   color: white;
 }
 
-.main_section-2_contact {
+.main-section-2_contact {
   margin-top: 30px;
 }
 
@@ -689,7 +689,7 @@ input[type="checkbox"]:hover {
   background: rgb(7, 158, 7);
 }
 
-.main_bottomsection_contact {
+.main-bottomsection_contact {
   width: 360px;
   margin: 30px auto;
 }
@@ -712,7 +712,7 @@ input[type="checkbox"]:hover {
 
 .exhibition3_exhibition {
   background: url(/images/exhibition/exhibition3.jpg) no-repeat;
-  background-position-y: -50px;
+  background-position-y: -30px;
 }
 .exhibition4_exhibition {
   background: url(/images/exhibition/exhibition4.jpg) no-repeat;
@@ -807,11 +807,8 @@ Everything might not work perfect on even smaller displays. Additional media que
     height: 100px;
   }
 
-  .nav-bar_desktop {
+  .navbar_desktop {
     display: none;
-  }
-
-  .nav-bar_mobile {
   }
 
   .hamburgermenu_header {
@@ -823,15 +820,15 @@ Everything might not work perfect on even smaller displays. Additional media que
   }
 
   #hamburger-checkbox-mobile,
-  .nav-header {
+  .nav_header {
     display: none;
   }
 
-  #hamburger-checkbox-mobile:checked ~ .nav-header {
+  #hamburger-checkbox-mobile:checked ~ .nav_header {
     display: block;
   }
 
-  .nav__list_header {
+  .navlist_header {
     position: absolute;
     left: 0;
     top: 100px;
@@ -848,7 +845,7 @@ Everything might not work perfect on even smaller displays. Additional media que
     padding-bottom: 35px;
   }
 
-  .nav__list_header a:visited {
+  .navlist_header a:visited {
     color: #f5f5f5;
   }
 
@@ -903,7 +900,7 @@ Everything might not work perfect on even smaller displays. Additional media que
     text-align: center;
   }
 
-  .nav__list-socialmedia-mobile_footer {
+  .navlist-socialmedia-mobile_footer {
     display: inline-flex;
     padding: 0;
     list-style: none;
@@ -917,13 +914,13 @@ Everything might not work perfect on even smaller displays. Additional media que
   }
 
   /* Headers for all containers */
-  .cont_headers_index {
+  .cont-headers_index {
     position: relative;
     top: 5px;
   }
 
   /* Parapraphs for all containers */
-  .cont_paragraphs_index {
+  .cont-paragraphs_index {
     margin: 0 10px;
   }
 
@@ -941,10 +938,10 @@ Everything might not work perfect on even smaller displays. Additional media que
     height: 445px;
   }
 
-  .cont_para1_index {
+  .cont-para1_index {
   }
 
-  .cont_image1 {
+  .cont-image1 {
     margin-top: 30px;
     height: 244px;
     width: 350px;
@@ -960,26 +957,26 @@ Everything might not work perfect on even smaller displays. Additional media que
     height: 350px;
   }
 
-  .cont_header3_index {
+  .cont-header3_index {
   }
 
-  .cont_para3_index {
+  .cont-para3_index {
     position: relative;
     bottom: 15px;
   }
 
-  .cont_image2,
-  .cont_image3 {
+  .cont-image2,
+  .cont-image3 {
     margin-left: 5px;
     height: 170px;
     width: 340px;
   }
 
-  .cont_image2 {
+  .cont-image2 {
     margin-top: 27px;
   }
 
-  .cont_image3 {
+  .cont-image3 {
   }
 
   /* 4th. container */
@@ -987,36 +984,36 @@ Everything might not work perfect on even smaller displays. Additional media que
     height: 450px;
   }
 
-  .cont_header4_index {
+  .cont-header4_index {
     top: -215px;
   }
 
-  .cont_para4_index,
-  .cont_para5_index {
+  .cont-para4_index,
+  .cont-para5_index {
     position: relative;
     bottom: 235px;
   }
 
-  .cont_para5_index {
+  .cont-para5_index {
     padding: 5px;
     margin-top: 15px;
   }
 
-  .cont_image4,
-  .cont_image5 {
+  .cont-image4,
+  .cont-image5 {
     border: 1px solid #cccccc;
     height: 175px;
     width: 175px;
   }
 
-  .cont_image4 {
+  .cont-image4 {
     z-index: 1;
     position: relative;
     top: 264px;
     left: 8px;
   }
 
-  .cont_image5 {
+  .cont-image5 {
     z-index: 2;
     position: relative;
     bottom: 215px;
@@ -1085,8 +1082,8 @@ Everything might not work perfect on even smaller displays. Additional media que
   }
 
   /* --- CONTACT --- */
-  .main_section-1_contact,
-  .main_section-2_contact {
+  .main-section-1_contact,
+  .main-section-2_contact {
     width: 330px;
     margin: 25px auto;
   }
@@ -1130,10 +1127,10 @@ Everything might not work perfect on even smaller displays. Additional media que
   }
 
   .bannernames-exhibition {
-    margin-top: 139px;
+    margin-top: 142px;
   }
 
-  .exhibition-bottom-line_exhibition {
+  .hr-bottomline_exhibition {
     max-width: 90%;
   }
 
@@ -1158,16 +1155,16 @@ but since there is no queries for section between mobile and desktop, it is set 
     height: 146px;
   }
 
-  .nav-bar_mobile {
+  .navbar_mobile {
     display: none;
   }
 
-  .nav-bar_desktop {
+  .navbar_desktop {
     display: flex;
     flex-grow: 1;
   }
 
-  .nav__list_header {
+  .navlist_header {
     margin: 0;
     padding: 0;
     display: flex;
@@ -1179,12 +1176,12 @@ but since there is no queries for section between mobile and desktop, it is set 
     height: 140px;
   }
 
-  .nav-header {
+  .nav_header {
     margin-left: auto;
     margin-top: auto;
   }
 
-  .nav__list_header {
+  .navlist_header {
     margin: 0;
     padding: 0;
     display: flex;
@@ -1192,46 +1189,46 @@ but since there is no queries for section between mobile and desktop, it is set 
     gap: 1em;
   }
 
-  .list-header {
+  .navlist-desktop_header {
     text-decoration: none;
     padding: 15px;
   }
 
-  .nav__list_header a:visited {
+  .navlist_header a:visited {
     color: black;
   }
 
   /* Have to fix animation. Hover color only on text - part 1 */
-  .nav__list_header a:hover {
+  .navlist_header a:hover {
     color: white;
   }
 
   /* Have to fix animation. Hover color only on text - part 2 */
-  .list-header:hover {
+  .navlist-desktop_header:hover {
     transition: 0.3s ease;
   }
 
-  .list-header:nth-of-type(1):hover {
+  .navlist-desktop_header:nth-of-type(1):hover {
     background: #151514;
   }
-  .list-header:nth-of-type(2):hover {
+  .navlist-desktop_header:nth-of-type(2):hover {
     background: #2b6cb6;
   }
-  .list-header:nth-of-type(3):hover {
+  .navlist-desktop_header:nth-of-type(3):hover {
     background: #239638;
   }
-  .list-header:nth-of-type(4):hover {
+  .navlist-desktop_header:nth-of-type(4):hover {
     background: #5d0959;
   }
-  .list-header:nth-of-type(5):hover {
+  .navlist-desktop_header:nth-of-type(5):hover {
     background: #f58300;
   }
 
-  .nav__list_header li:nth-of-type(1) {
+  .navlist_header li:nth-of-type(1) {
     margin-left: auto;
   }
 
-  .nav__list_header li:nth-of-type(5) {
+  .navlist_header li:nth-of-type(5) {
     margin-right: 50px;
   }
 
@@ -1270,11 +1267,11 @@ but since there is no queries for section between mobile and desktop, it is set 
   }
 
   /* Social Media icons */
-  .nav__list-socialmedia_footer li:nth-of-type(1) {
+  .navlist-socialmedia_footer li:nth-of-type(1) {
     margin-left: auto;
   }
 
-  .nav__list-socialmedia_footer {
+  .navlist-socialmedia_footer {
     display: flex;
     padding: 0;
     list-style: none;
@@ -1308,19 +1305,19 @@ but since there is no queries for section between mobile and desktop, it is set 
     width: 1000px;
   }
 
-  .cont_header1_index {
+  .cont-header1_index {
     position: relative;
     top: 20px;
   }
 
-  .cont_para1_index {
+  .cont-para1_index {
     position: relative;
     top: 20px;
     margin-left: 60px;
     margin-right: 60px;
   }
 
-  .cont_image1 {
+  .cont-image1 {
     margin: 40px 0 0 10px;
     height: 472px;
     width: 980px;
@@ -1353,35 +1350,35 @@ but since there is no queries for section between mobile and desktop, it is set 
     margin: 0 auto;
   }
 
-  .cont_para2_index,
-  .cont_para3_index {
+  .cont-para2_index,
+  .cont-para3_index {
     margin-left: 30px;
     margin-right: 30px;
   }
 
-  .cont_para2_index {
+  .cont-para2_index {
     position: relative;
     bottom: 10px;
   }
 
-  .cont_para3_index {
+  .cont-para3_index {
     position: relative;
     bottom: 25px;
   }
 
-  .cont_image2,
-  .cont_image3 {
+  .cont-image2,
+  .cont-image3 {
     margin-left: 10px;
     height: 210px;
     width: 520px;
   }
 
-  .cont_image2 {
+  .cont-image2 {
     position: relative;
     bottom: 22px;
   }
 
-  .cont_image3 {
+  .cont-image3 {
     position: relative;
     top: 4px;
   }
@@ -1395,49 +1392,49 @@ but since there is no queries for section between mobile and desktop, it is set 
     width: 900px;
   }
 
-  .cont_header4_index {
+  .cont-header4_index {
     position: relative;
     left: 200px;
     bottom: 20px;
   }
 
-  .cont_para4_index,
-  .cont_para5_index {
+  .cont-para4_index,
+  .cont-para5_index {
     position: relative;
     top: 100px;
   }
 
-  .cont_para4_index {
+  .cont-para4_index {
     right: 50px;
   }
 
-  .cont_para5_index {
+  .cont-para5_index {
     width: 380px;
     padding: 8px;
     right: 60px;
   }
 
-  .cont_image4,
-  .cont_image5 {
+  .cont-image4,
+  .cont-image5 {
     border: 1px solid #cccccc;
     height: 220px;
     width: 220px;
   }
 
-  .cont_image4 {
+  .cont-image4 {
     position: relative;
     top: 60px;
     left: 15px;
   }
 
-  .cont_image5 {
+  .cont-image5 {
     position: relative;
     top: 15px;
     right: 50px;
   }
 
   /* Bottomsection INDEX */
-  .container_buttons_index {
+  .cont-buttons_index {
     display: flex;
     margin-bottom: 75px;
   }
@@ -1515,8 +1512,8 @@ but since there is no queries for section between mobile and desktop, it is set 
   }
 
   /* --- CONTACT --- */
-  .main_section-1_contact,
-  .main_section-2_contact {
+  .main-section-1_contact,
+  .main-section-2_contact {
     width: 500px;
     margin: 25px auto;
   }
@@ -1637,7 +1634,7 @@ but since there is no queries for section between mobile and desktop, it is set 
     margin-top: 171px;
   }
 
-  .exhibition-bottom-line_exhibition {
+  .hr-bottomline_exhibition {
     max-width: 80%;
   }
 
