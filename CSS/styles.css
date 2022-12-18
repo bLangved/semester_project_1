@@ -1394,7 +1394,7 @@ but since there is no queries for section between mobile and desktop, it is set 
 
   .cont-header4_index {
     position: relative;
-    left: 200px;
+    left: 140px;
     bottom: 20px;
   }
 
@@ -1405,13 +1405,13 @@ but since there is no queries for section between mobile and desktop, it is set 
   }
 
   .cont-para4_index {
-    right: 50px;
+    right: 110px;
   }
 
   .cont-para5_index {
     width: 380px;
     padding: 8px;
-    right: 60px;
+    right: 120px;
   }
 
   .cont-image4,
@@ -1430,7 +1430,7 @@ but since there is no queries for section between mobile and desktop, it is set 
   .cont-image5 {
     position: relative;
     top: 15px;
-    right: 50px;
+    right: 105px;
   }
 
   /* Bottomsection INDEX */
@@ -1605,8 +1605,7 @@ but since there is no queries for section between mobile and desktop, it is set 
     height: 220px;
   }
 
-  .containers-exhibition:hover,
-  .exhibition1_exhibition:hover {
+  .containers-exhibition:hover {
     transition: 0.2s ease-in-out;
     opacity: 0.5;
     cursor: pointer;
