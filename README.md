@@ -24,7 +24,7 @@ Core target audience was primary and middle school children (ages 7-15), and fam
 
 ## Built With
 
-This website was built using the languages: 
+This website was built using the following languages:
 
 - HTML 5
 - CSS
