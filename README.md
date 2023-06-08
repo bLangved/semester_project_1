@@ -1,68 +1,61 @@
-# Project Exam 1
+# Semester Project 1 - Community Science Museum
 
-![image](https://user-images.githubusercontent.com/52622303/164316813-4b12d99f-aeb7-4069-85cf-e72b3a50ac99.png)
+![Image from project](https://github.com/bLangved/semester_project_1/assets/101604131/b8aefe61-c6da-48fc-a7db-c6c1661c4f11)
 
-A simple overview of the use/purpose of the project.
+
+A project website for a science museum. 
 
 ## Description
 
-Add a more detailed description of what your project entails and set out to do.
+This project was a school assignment where I was supposed to create a website for an interactive science museum called the "Community Science Museum". 
 
-You can add some bullet points if you'd like to:
+I was provided media assets as text and images. 
 
-- List item 1
-- List item 2
-- List item 3
+The website contains the following pages:
+
+- Main page
+- Contact page
+- About page
+- Get involved page
+- Exhibition page
+
+### Target audience was: 
+Core target audience was primary and middle school children (ages 7-15), and families with young children. 
 
 ## Built With
 
-You can list a the tech stack that you've used over here
+This website was built using the languages: 
 
-- [React.js](https://reactjs.org/)
-- [Bootstrap](https://getbootstrap.com)
+- HTML 5
+- CSS
 
 ## Getting Started
 
 ### Installing
 
-This is where you list how to get the project started. It typically just includes telling a person to clone the repo and then to install the dependencies e.g.
-
-1. Clone the repo:
+Clone this repo:
 
 ```bash
-git clone git@github.com:NoroffFEU/portfolio-1-example.git
-```
-
-2. Install the dependencies:
-
-```
-npm install
+git clone https://github.com/bLangved/semester_project_1.git
 ```
 
 ### Running
 
-Here is where you detail how to run the app. It typically involves the commands you'd need to run to start the project e.g.
-
-To run the app, run the following commands:
-
-```bash
-npm run start
-```
+Only contains static files, so should run on any device. Just go into root folder, and open index.html.
 
 ## Contributing
 
-Here you can detail any information you want to provide regarding contributing to the project. For big projects you will usually have a separate `CONTRIBUTING.md` and link to it, but for smaller projects you can simply include instructions here. These instructions can simply detail the process you want a person to take, such as to make sure to open a pull request so code can be reviewed.
+As this project was a school assigment, it is not open for contributions.
 
 ## Contact
 
-This is where you can leave your social links for people to contact you, such as a LinkedIn profile or Twitter link e.g.
+To get in contact with me regarding this project, please use one of the below options:
 
-[My LinkedIn page]([www.linkedin.com](https://www.linkedin.com/in/bj%C3%B8rnar-heian-langved-23157b246/))
+[My LinkedIn page](https://www.linkedin.com/in/bj%C3%B8rnar-heian-langved-23157b246/)
+<br>
+Discord User name: Langved#4769
 
-## License
-
-You can link to your license file here if you're using one, or mention what license the codebase falls under. If you're unsure then you can simply delete this section.
 
 ## Acknowledgments
 
-This is where you can add any acknowledgements if you'd like, such as to people who have helped you or any code snippets you'd like to mention. You can delete this section if you don't have any acknowledgements to make.
+[Noroff - School of technology and digital media](https://www.noroff.no/en)
